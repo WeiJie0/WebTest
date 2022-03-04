@@ -1,0 +1,58 @@
+body {
+  max-width: 1920px;
+  margin: auto;
+  background: #72b9d5;
+  /* background: linear-gradient(to bottom , #72b9d5 70%, #fff 30%); */
+}
+
+#allBoxes rect:nth-child(1) {fill:#e95520;}
+#allBoxes rect:nth-child(2) {fill:#f9bf2c;}
+#allBoxes rect:nth-child(3) {fill:#1c50a1;}
+#allBoxes rect:nth-child(4) {fill:#00a199;}
+#allBoxes rect:nth-child(5) {fill:#f19ec2;}
+#allBoxes rect:nth-child(6) {fill:#72b9d5;}
+
+.banner {
+  background: url("../assets/index1.png") center no-repeat;
+  background-size: cover;
+}
+
+.nav-item {
+  width: 90px;
+}
+
+.intro-item.active {
+  background: url("../assets/item-active-bg.png") center no-repeat;
+  background-size: contain;
+}
+
+svg {
+  pointer-events: fill;
+}
+
+[v-cloak]{
+  display: none;
+}
+
+[id^="Section"] {
+  transition: all 0.5s ease-out;
+  cursor: pointer;
+}
+[id^="Section-"]:hover {
+  transform: translateY(5px);
+}
+
+#section-6-text {
+  background: url("../assets/index6-text-bg.png") center no-repeat;
+  background-size: contain;
+}
+
+@media screen and (max-width: 767px) {
+body {
+  background: linear-gradient(to bottom , #72b9d5, #fff);
+}
+  #section-6-text {
+    background: url("../assets/mobile-index6-text-bg.png") center no-repeat;
+    background-size: contain;
+  }
+}
