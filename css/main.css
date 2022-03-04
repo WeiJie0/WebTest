@@ -5,12 +5,24 @@ body {
   /* background: linear-gradient(to bottom , #72b9d5 70%, #fff 30%); */
 }
 
-#allBoxes rect:nth-child(1) {fill:#e95520;}
-#allBoxes rect:nth-child(2) {fill:#f9bf2c;}
-#allBoxes rect:nth-child(3) {fill:#1c50a1;}
-#allBoxes rect:nth-child(4) {fill:#00a199;}
-#allBoxes rect:nth-child(5) {fill:#f19ec2;}
-#allBoxes rect:nth-child(6) {fill:#72b9d5;}
+#allBoxes rect:nth-child(1) {
+  fill: #e95520;
+}
+#allBoxes rect:nth-child(2) {
+  fill: #f9bf2c;
+}
+#allBoxes rect:nth-child(3) {
+  fill: #1c50a1;
+}
+#allBoxes rect:nth-child(4) {
+  fill: #00a199;
+}
+#allBoxes rect:nth-child(5) {
+  fill: #f19ec2;
+}
+#allBoxes rect:nth-child(6) {
+  fill: #72b9d5;
+}
 
 .banner {
   background: url("../assets/index1.png") center no-repeat;
@@ -30,7 +42,7 @@ svg {
   pointer-events: fill;
 }
 
-[v-cloak]{
+[v-cloak] {
   display: none;
 }
 
@@ -42,15 +54,23 @@ svg {
   transform: translateY(5px);
 }
 
+#section-4 {
+  background-image: url("../assets/index4-bg.png");
+}
+
 #section-6-text {
   background: url("../assets/index6-text-bg.png") center no-repeat;
   background-size: contain;
 }
 
 @media screen and (max-width: 767px) {
-body {
-  background: linear-gradient(to bottom , #72b9d5, #fff);
-}
+  body {
+    background: linear-gradient(to bottom, #72b9d5, #fff);
+  }
+
+  #section-4 {
+    background-image: none;
+  }
   #section-6-text {
     background: url("../assets/mobile-index6-text-bg.png") center no-repeat;
     background-size: contain;

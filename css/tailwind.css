@@ -851,6 +851,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-color: rgb(31 81 162 / var(--tw-bg-opacity));
 }
 
+.bg-none {
+  background-image: none;
+}
+
 .bg-cover {
   background-size: cover;
 }
@@ -1163,6 +1167,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
   .md\:gap-10 {
     gap: 2.5rem;
+  }
+
+  .md\:bg-cover {
+    background-size: cover;
   }
 
   .md\:p-3 {
