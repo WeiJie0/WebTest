@@ -24,11 +24,11 @@ body {
   fill: #72b9d5;
 }
 
-.banner {
-  background: url("../assets/index1.png") center no-repeat;
-  background-size: cover;
+/* .banner {
+  background: url("../assets/index1.png") top no-repeat;
+  background-size: contain;
 }
-
+ */
 .nav-item {
   width: 90px;
 }
@@ -36,6 +36,10 @@ body {
 .intro-item.active {
   background: url("../assets/item-active-bg.png") center no-repeat;
   background-size: contain;
+}
+
+#toTop img{
+  width:120px;
 }
 
 svg {
@@ -67,7 +71,9 @@ svg {
   body {
     background: linear-gradient(to bottom, #72b9d5, #fff);
   }
-
+  #toTop img{
+    width:80px;
+  }
   #section-4 {
     background-image: none;
   }
