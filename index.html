@@ -2501,7 +2501,7 @@
                         repeatRefresh: true
                     })
 
-                    if (window.devicePixelRatio != 1) {  // 若非 100% 時做出調整
+                    if (window.innerWidth > 1024 && window.devicePixelRatio != 1) {  // 若非 100% 時做出調整
                         let _scale = (1 / window.devicePixelRatio);
                         gsap.set('#map',{
                             scale: _scale,
