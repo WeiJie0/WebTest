@@ -38,6 +38,11 @@ body {
   background-size: contain;
 }
 
+.btn-bg{
+  background: url("../assets/item-active-bg.png") center no-repeat;
+  background-size: contain;
+}
+
 #toTop img{
   width:120px;
 }
