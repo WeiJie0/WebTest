@@ -72,6 +72,14 @@ svg {
   background-size: contain;
 }
 
+@media screen and (max-width:1030px) {
+  #section-6-text {
+    /* background: url("../assets/mobile-index6-text-bg.png") center no-repeat;
+    background-size: contain; */
+    background: none;
+  }
+}
+
 @media screen and (max-width: 767px) {
   body {
     background: linear-gradient(to bottom, #72b9d5, #fff);
@@ -83,7 +91,8 @@ svg {
     background-image: none;
   }
   #section-6-text {
-    background: url("../assets/mobile-index6-text-bg.png") center no-repeat;
-    background-size: contain;
+    /* background: url("../assets/mobile-index6-text-bg.png") center no-repeat;
+    background-size: contain; */
+    background: none;
   }
 }

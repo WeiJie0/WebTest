@@ -96,7 +96,7 @@
                             <img src="assets/text-bg.png" class="w-full md:hidden" alt="" srcset="">
                         </div>
                         <div
-                            class="absolute top-0 md:top-8 xl:top-16 3xl:top-1/4 w-9/12 left-12 md:left-48 xl:left-60 3xl:left-80 lg:w-1/2 py-4 md:p-3">
+                            class="absolute top-0 md:top-10 xl:top-16 3xl:top-1/4 w-9/12 left-12 md:left-48 xl:left-60 3xl:left-80 md:w-1/2 py-4 md:p-3">
                             <ul class="flex">
                                 <li @click="introType = 'concepts'" :class="{'active': introType == 'concepts'}"
                                     class="intro-item py-1 px-2 xl:px-3 text-yellow font-bold xl:text-xl cursor-pointer mr-5">
@@ -109,7 +109,7 @@
                             <h3 class="text-white font-bold hidden xl:block xl:text-3xl xl:my-3">
                                 {{introTitle[introType]}}
                             </h3>
-                            <p class="text-white font-bold  text-sm lg:text-base 2xl:text-lg">
+                            <p class="text-white font-bold text-sm md:text-base 2xl:text-lg">
                                 {{introDesc[introType]}}
                             </p>
                         </div>
@@ -124,7 +124,7 @@
         <section id="section-3" class="relative my-8">
             <div class="w-full flex flex-col lg:flex-row items-center lg:justify-between">
                 <div class="lg:w-2/5 gs gs-left">
-                    <img class="mx-auto lg:ml-auto lg:mr-8 w-4/5 lg:w-3/5" src="assets/index3-title.png" alt=""
+                    <img class="mx-auto lg:ml-auto lg:mr-8 w-4/5 md:w-3/5" src="assets/index3-title.png" alt=""
                         srcset="">
                 </div>
                 <div class="md:w-2/3 ml-auto lg:w-2/5 mt-4 lg:mt-0">
@@ -134,7 +134,7 @@
 
         <section id="section-4" class="pt-4 lg:pt-8 lg:pb-48 3xl:pb-56 relative bg-center bg-cover">
             <div class="relative flex justify-center items-center z-10">
-                <div class="px-5 w-full md:w-2/3 xl:w-3/5 3xl:w-1/2">
+                <div class="px-5 w-full md:w-4/5 xl:w-3/5 3xl:w-1/2">
                     <svg id="map" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
                         viewBox="0 0 385.31 344.46">
                         <defs>
@@ -2084,7 +2084,7 @@
                     </svg>
                 </div>
             </div>
-            <div class="w-full py-3 lg:py-0 lg:absolute lg:bottom-0 lg:left-0 z-0">
+            <div class="w-full py-0 lg:absolute lg:bottom-0 lg:left-0 z-0">
                 <img class="hidden lg:block" src="assets/index4-footer.png" alt="" srcset="">
                 <div
                     class="relative lg:absolute bg-lightBlue3 lg:bg-transparent overflow-auto rounded lg:rounded-none p-4 xl:py-0 w-full lg:w-3/5 xl:w-1/2 mt-4 xl:h-2/3 mx-auto text-main flex flex-col justify-center items-center bottom-0 left-0 lg:left-1/2 transform lg:-translate-x-1/2 font-bold 2xl:text-lg">
@@ -2137,12 +2137,14 @@
                     <img class=" w-40 md:w-56 xl:px-5 3xl:px-0 gs gs-top" src="assets/index6-title.png" alt=""
                         srcset="">
                     <div id="section-6-text"
-                        class="w-4/5 md:w-3/5 xl:w-2/5 2xl:w-1/3 3xl:mt-12 p-16 px-12 3xl:p-24 lg:py-16 flex flex-col items-center bg-contain bg-no-repeat bg-center">
-                        <p class="text-white mb-4 3xl:mb-6 text-sm md:text-lg 3xl:text-xl font-bold">
+                        class="w-4/5 md:w-3/5 xl:w-2/5 2xl:w-1/3 mt-4 xl:p-16 xl:px-12 3xl:p-24 lg:py-12 flex-col items-center bg-contain bg-no-repeat bg-center">
+                        <img src="assets/info-block.png" class="xl:hidden cursor-pointer" alt="" srcset="" @click.prevent="toLink('https://docs.google.com/document/d/e/2PACX-1vRWQT6IeVip9tTcf8_ilJE8h4LTvGYZ6iZBC-I75Vxf-caElU8DjN2w6YXgdqKU0xjEkWXP4CFPnell/pub')">
+                        <p class="text-white mb-4 3xl:mb-6 text-sm hidden xl:block md:text-lg 3xl:text-xl font-bold">
                             展示期間輔以職業營(課程)的定期辦理，包括產業參觀、核心課程學習及實作課程體驗等。
                         </p>
                         <a href="https://docs.google.com/document/d/e/2PACX-1vRWQT6IeVip9tTcf8_ilJE8h4LTvGYZ6iZBC-I75Vxf-caElU8DjN2w6YXgdqKU0xjEkWXP4CFPnell/pub"
-                            class="text-yellow text-sm font-bold btn-bg px-8 xl:p-2" style="background-size:cover">系列活動訊息連結</a>
+                            class="text-yellow text-sm font-bold hidden xl:block">
+                        <img class="w-1/2 mx-auto" src="assets/info-btn.png" alt="" srcset=""></a>
                     </div>
                 </div>
             </div>
@@ -2185,19 +2187,20 @@
         </section>
 
         <section id="section-8" class="relative z-0">
-            <div class="absolute w-full top-0 left-0 bg-lightBlue3 rounded-b-full">
-                <div class="pb-8">
+            <div class="absolute w-full top-0 left-0 bg-lightBlue3 xl:rounded-b-full">
+                <div class="xl:pb-8">
                     <div class="px-5 md:px-0 md:w-3/5 lg:w-1/2 mx-auto py-3 gs gs-top">
                         <img src="assets/index8-title.png" alt="" srcset="">
                     </div>
                 </div>
             </div>
-            <div class="absolute lg:w-full lg:h-full left-8 bottom-8 lg:bottom-auto lg:top-1/3 mx-auto">
-                <div class="w-4/5 lg:w-2/5 h-4/5 lg:h-2/5 bg-contain bg-center bg-no-repeat flex flex-col justify-center items-center py-3 lg:py-0"
+            <div class="absolute lg:w-full lg:h-full left-8 bottom-8 lg:bottom-auto lg:top-1/2 xl:top-1/3 mx-auto">
+                <img class="w-4/5 md:w-3/5 lg:w-2/5 xl:hidden cursor-pointer" src="assets/visit-block.png" @click.prevent="toLink('https://www.nstm.gov.tw/')" />
+                <div class="w-4/5 lg:w-2/5 h-4/5 lg:h-2/5 bg-contain bg-center bg-no-repeat  flex-col justify-center items-center py-3 lg:py-0 hidden xl:flex"
                     style="background-image: url('assets/text-bg.png');">
-                    <p class="text-center text-white w-3/4 lg:w-3/5 xl:w-1/2 text-sm lg:text-base font-bold p-4 xl:pb-0">國立科學工藝博物館
+                    <p class="text-center text-white w-3/4 lg:w-3/5 xl:w-1/2 text-sm lg:text-base font-bold p-4 xl:pb-0 hidden xl:block">國立科學工藝博物館
                         4樓常設展示廳<br>每逢週一、除夕、年初一固定休館<br>展廳開放時間自上午9點至下午5點</p>
-                    <a href="https://www.nstm.gov.tw/" class="text-yellow font-bold lg:my-5 btn-bg px-8 py-1">參觀資訊</a>
+                    <a href="https://www.nstm.gov.tw/" class="text-yellow font-bold lg:my-5 btn-bg px-8 py-1 hidden xl:block">參觀資訊</a>
                 </div>
             </div>
             <iframe class="pt-16 lg:pt-24"
@@ -2577,6 +2580,10 @@
                             scale: _scale,
                         })
                     }
+                }
+                ,
+                toLink: function(link){
+                    location.href = link;
                 }
             },
             computed: {
