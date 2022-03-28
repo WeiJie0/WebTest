@@ -33,8 +33,17 @@ body {
   width: 90px;
 }
 
+.nav-item-en {
+  width: 100px;
+}
+
 .intro-item.active {
   background: url("../assets/item-active-bg.png") center no-repeat;
+  background-size: contain;
+}
+
+.intro-item-en.active {
+  background: url("../assets/item-active-bg-en.png") center no-repeat;
   background-size: contain;
 }
 

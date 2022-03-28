@@ -771,6 +771,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   width: 75%;
 }
 
+.w-11\/12 {
+  width: 91.666667%;
+}
+
+.w-10\/12 {
+  width: 83.333333%;
+}
+
 .translate-y-1\/2 {
   --tw-translate-y: 50%;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
@@ -984,6 +992,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-right: 2rem;
 }
 
+.px-1 {
+  padding-left: 0.25rem;
+  padding-right: 0.25rem;
+}
+
 .pt-2 {
   padding-top: 0.5rem;
 }
@@ -1004,6 +1017,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-top: 4rem;
 }
 
+.pt-12 {
+  padding-top: 3rem;
+}
+
+.pt-8 {
+  padding-top: 2rem;
+}
+
 .text-center {
   text-align: center;
 }
@@ -1016,6 +1037,16 @@ Ensure the default browser behavior of the `hidden` attribute.
 .text-base {
   font-size: 1rem;
   line-height: 1.5rem;
+}
+
+.text-xs {
+  font-size: 0.75rem;
+  line-height: 1rem;
+}
+
+.text-xl {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
 }
 
 .font-black {
@@ -1166,6 +1197,10 @@ Ensure the default browser behavior of the `hidden` attribute.
     left: 3rem;
   }
 
+  .md\:left-40 {
+    left: 10rem;
+  }
+
   .md\:block {
     display: block;
   }
@@ -1227,6 +1262,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   .md\:px-0 {
     padding-left: 0px;
     padding-right: 0px;
+  }
+
+  .md\:py-3 {
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
   }
 
   .md\:pb-0 {
@@ -1311,6 +1351,18 @@ Ensure the default browser behavior of the `hidden` attribute.
 
   .lg\:top-1\/2 {
     top: 50%;
+  }
+
+  .lg\:left-1\/4 {
+    left: 25%;
+  }
+
+  .lg\:left-16 {
+    left: 4rem;
+  }
+
+  .lg\:left-24 {
+    left: 6rem;
   }
 
   .lg\:my-10 {
@@ -1495,6 +1547,10 @@ Ensure the default browser behavior of the `hidden` attribute.
     top: 33.333333%;
   }
 
+  .xl\:top-2\/3 {
+    top: 66.666667%;
+  }
+
   .xl\:my-3 {
     margin-top: 0.75rem;
     margin-bottom: 0.75rem;
@@ -1521,6 +1577,10 @@ Ensure the default browser behavior of the `hidden` attribute.
     height: 66.666667%;
   }
 
+  .xl\:h-4\/5 {
+    height: 80%;
+  }
+
   .xl\:w-1\/5 {
     width: 20%;
   }
@@ -1543,6 +1603,14 @@ Ensure the default browser behavior of the `hidden` attribute.
 
   .xl\:w-full {
     width: 100%;
+  }
+
+  .xl\:w-2\/3 {
+    width: 66.666667%;
+  }
+
+  .xl\:w-7\/12 {
+    width: 58.333333%;
   }
 
   .xl\:columns-4 {
@@ -1620,6 +1688,10 @@ Ensure the default browser behavior of the `hidden` attribute.
     width: 33.333333%;
   }
 
+  .\32xl\:w-1\/2 {
+    width: 50%;
+  }
+
   .\32xl\:pt-24 {
     padding-top: 6rem;
   }
@@ -1627,6 +1699,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   .\32xl\:text-lg {
     font-size: 1.125rem;
     line-height: 1.75rem;
+  }
+
+  .\32xl\:text-base {
+    font-size: 1rem;
+    line-height: 1.5rem;
   }
 }
 
@@ -1659,8 +1736,21 @@ Ensure the default browser behavior of the `hidden` attribute.
     left: 8rem;
   }
 
+  .\33xl\:top-16 {
+    top: 4rem;
+  }
+
+  .\33xl\:my-3 {
+    margin-top: 0.75rem;
+    margin-bottom: 0.75rem;
+  }
+
   .\33xl\:mb-6 {
     margin-bottom: 1.5rem;
+  }
+
+  .\33xl\:block {
+    display: block;
   }
 
   .\33xl\:w-1\/2 {
@@ -1694,8 +1784,23 @@ Ensure the default browser behavior of the `hidden` attribute.
     line-height: 1.75rem;
   }
 
+  .\33xl\:text-lg {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
+
+  .\33xl\:text-3xl {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+  }
+
   .hover\:3xl\:text-2xl:hover {
     font-size: 1.5rem;
     line-height: 2rem;
+  }
+
+  .hover\:3xl\:text-xl:hover {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
   }
 }
