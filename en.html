@@ -98,7 +98,7 @@
                             <img src="assets/text-bg-en.png" class="w-full md:hidden" alt="" srcset="">
                         </div>
                         <div
-                            class="absolute top-0 3xl:top-16 w-9/12 left-12 md:left-40 xl:left-60 3xl:left-80 md:w-3/5 3xl:w-1/2 py-4 md:p-3">
+                            class="absolute top-0 3xl:top-16 w-9/12 left-12 md:left-40 xl:left-60 3xl:left-80 md:w-3/5 3xl:w-1/2 py-2 xl:py-4 md:p-3">
                             <ul class="flex">
                                 <li @click="introType = 'Exhibition Concepts'"
                                     :class="{'active': introType == 'Exhibition Concepts'}"
@@ -110,12 +110,14 @@
                                     class="intro-item-en py-1 px-2 xl:px-3 text-yellow text-center font-bold xl:text-xl cursor-pointer">
                                     Exhibition Features</li>
                             </ul>
-                            <h3 class="text-white font-bold hidden md:block text-xl xl:text-xl 3xl:text-3xl 3xl:my-3">
-                                {{introType}}
-                            </h3>
-                            <p class="text-white font-bold text-sm md:text-base 3xl:text-lg">
-                                {{introDescEn[introType]}}
-                            </p>
+                            <div class="lg:px-4">
+                                <h3 class="text-white font-bold hidden md:block text-xl xl:text-xl 3xl:text-3xl 3xl:my-3">
+                                    {{introType}}
+                                </h3>
+                                <p class="text-white font-bold text-sm md:text-base 3xl:text-lg">
+                                    {{introDescEn[introType]}}
+                                </p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -2091,10 +2093,10 @@
             <div class="w-full py-0 lg:absolute lg:bottom-0 lg:left-0 z-0">
                 <!-- <img class="hidden lg:block" src="assets/index4-footer.png" alt="" srcset=""> -->
                 <div
-                    class="relative bg-lightBlue3 overflow-auto rounded lg:rounded-none p-4 xl:py-0 3xl:pb-10 w-full lg:w-3/5 xl:w-full mt-4 xl:h-4/5 mx-auto text-main flex flex-col justify-center items-center bottom-0 left-0 lg:left-1/2 transform lg:-translate-x-1/2 font-bold">
+                    class="relative bg-lightBlue3 overflow-auto rounded lg:rounded-none p-4 3xl:pb-10 w-full lg:w-3/5 xl:w-full mt-4 xl:h-4/5 mx-auto text-main flex flex-col justify-center items-center bottom-0 left-0 lg:left-1/2 transform lg:-translate-x-1/2 font-bold">
                     <img style="max-height: 60px;" class="xl:my-3" :src="'assets/'+ selectSection + '.png'" alt="">
-                    <div class="w-10/12 lg:w-8/12 mx-auto py-4">
-                        <p class="font-bold">{{selectSectionTitle}}</p>
+                    <div class="w-10/12 lg:w-7/12 mx-auto">
+                        <p class="font-bold text-center">{{selectSectionTitle}}</p>
                         {{selectSectionDesc}}
                     </div>
                 </div>
@@ -2177,11 +2179,11 @@
                                 srcset="">
                         </div>
                         <div class="xl:w-3/4 2xl:w-3/5">
-                            <ul class="list-outside w-4/5 mx-auto xl:w-full md:columns-2 px-4 xl:py-16">
+                            <ul class="list-disc w-4/5 mx-auto xl:w-full md:columns-2 px-4 xl:py-16">
                                 <li v-for="item in links"
-                                    class="text-lightBlue2  items-center font-bold text-base py-2 lg:py-4 group hover:text-main transition duration-300 ease-linear">
+                                    class="text-lightBlue2  items-center font-bold text-base xl:text-lg py-2 lg:py-4 group hover:text-main transition duration-300 ease-linear">
                                     <a :href="item.url" target="_blank">
-                                        <span class="group-hover:text-green text-sm mr-2">●</span> {{item.en}}
+                                        <!-- <span class="group-hover:text-green text-sm mr-2">●</span> --> {{item.en}}
                                     </a>
                                 </li>
                             </ul>
@@ -2209,16 +2211,16 @@
         </section>
 
         <footer class="bg-deepBlue flex flex-col items-center justify-center py-5">
-            <p class="text-white w-4/5 lg:w-full text-center mx-auto text-sm lg:text-lg">Organizer: Ministry Of
+            <p class="text-white w-4/5 lg:w-full text-center mx-auto text-sm lg:text-base">Organizer: Ministry Of
                 Education</p>
-            <p class="text-white w-4/5 lg:w-full text-center mx-auto text-sm lg:text-lg">Co-organizer：National Kaohsiung
+            <p class="text-white w-4/5 lg:w-full text-center mx-auto text-sm lg:text-base">Co-organizer：National Kaohsiung
                 University of Science and Technology</p>
-            <p class="text-white w-4/5 lg:w-full text-center mx-auto text-sm lg:text-lg">National Pingtung University of
+            <p class="text-white w-4/5 lg:w-full text-center mx-auto text-sm lg:text-base">National Pingtung University of
                 Science and Technology</p>
-            <p class="text-white w-4/5 lg:w-full text-center mx-auto text-sm lg:text-lg">National Science and Technology
+            <p class="text-white w-4/5 lg:w-full text-center mx-auto text-sm lg:text-base">National Science and Technology
                 Museum</p>
 
-            <p class="text-white w-4/5 lg:w-full text-center mx-auto text-sm lg:text-lg">2022 © National Science And
+            <p class="text-white w-4/5 lg:w-full text-center mx-auto text-sm lg:text-base">2022 © National Science And
                 Technology Museum Designed By Pkthink</p>
         </footer>
     </div>
@@ -2352,7 +2354,7 @@
                         'color': '#89bcd5',
                         'desc': '定期辦理相關活動，包括分享職人故事講座或職人技能演示等。',
                         'desc-en': 'We conduct regular workshops and invite occupational professionals to share their experiences or demonstrate their expertise.',
-                        'sectionpics': ['g1.jpg', 'g2.jpg'],
+                        'sectionpics': ['g1.jpg', 'g2.jpg','g3.jpg','g4.jpg'],
                         'title': 'G區 作中學體驗',
                         'title-en': 'Region G  Learning by doing'
                     },
