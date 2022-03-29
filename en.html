@@ -93,17 +93,20 @@
                     <div class="section-text relative w-full md:w-4/5 mx-auto">
                         <div>
                             <img src="assets/index1-text.png" class="w-full hidden lg:block" alt="" srcset="">
-                            <img src="assets/index1-text-en.png" class="w-full hidden md:block lg:hidden" alt="" srcset="">
+                            <img src="assets/index1-text-en.png" class="w-full hidden md:block lg:hidden" alt=""
+                                srcset="">
                             <img src="assets/text-bg-en.png" class="w-full md:hidden" alt="" srcset="">
                         </div>
                         <div
                             class="absolute top-0 3xl:top-16 w-9/12 left-12 md:left-40 xl:left-60 3xl:left-80 md:w-3/5 3xl:w-1/2 py-4 md:p-3">
                             <ul class="flex">
-                                <li @click="introType = 'Exhibition Concepts'" :class="{'active': introType == 'Exhibition Concepts'}"
+                                <li @click="introType = 'Exhibition Concepts'"
+                                    :class="{'active': introType == 'Exhibition Concepts'}"
                                     class="intro-item-en py-1 px-2 xl:px-3 text-yellow text-center font-bold xl:text-xl cursor-pointer mr-5">
                                     Exhibition Concepts
                                 </li>
-                                <li @click="introType = 'Exhibition Features'" :class="{'active': introType == 'Exhibition Features'}"
+                                <li @click="introType = 'Exhibition Features'"
+                                    :class="{'active': introType == 'Exhibition Features'}"
                                     class="intro-item-en py-1 px-2 xl:px-3 text-yellow text-center font-bold xl:text-xl cursor-pointer">
                                     Exhibition Features</li>
                             </ul>
@@ -133,9 +136,9 @@
                 </div>
         </section>
 
-        <section id="section-4" class="pt-4 lg:pt-8 lg:pb-48 3xl:pb-56 relative bg-center bg-cover">
+        <section id="section-4" class="pt-4 lg:pt-8 xl:pb-64 relative bg-center bg-cover">
             <div class="relative flex justify-center items-center z-10">
-                <div class="px-5 w-full md:w-4/5 xl:w-3/5 3xl:w-1/2">
+                <div class="px-5 w-full md:w-4/5 xl:w-1/2">
                     <svg id="map" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
                         viewBox="0 0 385.31 344.46">
                         <defs>
@@ -2086,13 +2089,14 @@
                 </div>
             </div>
             <div class="w-full py-0 lg:absolute lg:bottom-0 lg:left-0 z-0">
-                <img class="hidden lg:block" src="assets/index4-footer.png" alt="" srcset="">
+                <!-- <img class="hidden lg:block" src="assets/index4-footer.png" alt="" srcset=""> -->
                 <div
-                    class="relative lg:absolute bg-lightBlue3 lg:bg-transparent overflow-auto rounded lg:rounded-none p-4 xl:py-0 w-full lg:w-3/5 xl:w-7/12 mt-4 xl:h-4/5 mx-auto text-main flex flex-col justify-center items-center bottom-0 left-0 lg:left-1/2 transform lg:-translate-x-1/2 font-bold">
-                    <img style="max-height: 60px;" class="xl:my-5" :src="'assets/'+ selectSection + '.png'"
-                        alt="">
-                    <p>{{selectSectionTitle}}</p>
-                    {{selectSectionDesc}}
+                    class="relative bg-lightBlue3 overflow-auto rounded lg:rounded-none p-4 xl:py-0 3xl:pb-10 w-full lg:w-3/5 xl:w-full mt-4 xl:h-4/5 mx-auto text-main flex flex-col justify-center items-center bottom-0 left-0 lg:left-1/2 transform lg:-translate-x-1/2 font-bold">
+                    <img style="max-height: 60px;" class="xl:my-3" :src="'assets/'+ selectSection + '.png'" alt="">
+                    <div class="w-10/12 lg:w-8/12 mx-auto py-4">
+                        <p class="font-bold">{{selectSectionTitle}}</p>
+                        {{selectSectionDesc}}
+                    </div>
                 </div>
             </div>
         </section>
@@ -2139,8 +2143,9 @@
                         srcset="">
                     <div id="section-6-text-en"
                         class="w-11/12 md:w-3/5 2xl:w-2/5 3xl:w-1/2 mt-4 xl:p-16 xl:px-12 3xl:p-24 lg:py-12 flex-col items-center bg-contain bg-no-repeat bg-center">
-                        <img src="assets/info-block-en.png" class="cursor-pointer" alt="" srcset="" @click.prevent="toLink('https://docs.google.com/document/d/e/2PACX-1vRWQT6IeVip9tTcf8_ilJE8h4LTvGYZ6iZBC-I75Vxf-caElU8DjN2w6YXgdqKU0xjEkWXP4CFPnell/pub')">
-                       <!--  <p class="text-white mb-4 3xl:mb-6 text-sm hidden xl:block md:text-base font-bold">
+                        <img src="assets/info-block-en.png" class="cursor-pointer" alt="" srcset=""
+                            @click.prevent="toLink('https://docs.google.com/document/d/e/2PACX-1vRWQT6IeVip9tTcf8_ilJE8h4LTvGYZ6iZBC-I75Vxf-caElU8DjN2w6YXgdqKU0xjEkWXP4CFPnell/pub')">
+                        <!--  <p class="text-white mb-4 3xl:mb-6 text-sm hidden xl:block md:text-base font-bold">
                             During the exhibition, occupational camps (part of the curriculum) are regularly conducted to give students the opportunity to be shown around a company while enhancing their learning in core courses and hands-on practices. For more information, click here:
                         </p>
                         <a href="https://docs.google.com/document/d/e/2PACX-1vRWQT6IeVip9tTcf8_ilJE8h4LTvGYZ6iZBC-I75Vxf-caElU8DjN2w6YXgdqKU0xjEkWXP4CFPnell/pub"
@@ -2166,16 +2171,15 @@
                     <div class="px-5 md:px-0 md:w-3/5 lg:w-2/5 mx-auto py-10 gs gs-top">
                         <img src="assets/index7-title-en.png" alt="">
                     </div>
-                    <div class="flex flex-col xl:flex-row w-full xl:w-4/5 mx-auto">
-                        <div class="xl:w-2/5">
+                    <div class="flex flex-col xl:flex-row items-center w-full xl:w-4/5 mx-auto">
+                        <div class="xl:w-1/4 2xl:w-2/5">
                             <img class="w-3/5 md:w-2/5 lg:w-1/4 xl:w-4/5 mx-auto" src="assets/logowithshadow.png" alt=""
                                 srcset="">
                         </div>
-                        <div class="xl:w-3/5">
-                            <ul
-                                class="list-outside w-4/5 mx-auto xl:w-full gap-0 md:gap-10 md:columns-2 px-4 xl:py-16">
+                        <div class="xl:w-3/4 2xl:w-3/5">
+                            <ul class="list-outside w-4/5 mx-auto xl:w-full md:columns-2 px-4 xl:py-16">
                                 <li v-for="item in links"
-                                    class="text-lightBlue2 items-center font-bold text-base md:text-lg 3xl-text-xl py-2 lg:py-4 group hover:text-main hover:lg:text-xl hover:2xl  transition duration-300 ease-linear">
+                                    class="text-lightBlue2  items-center font-bold text-base py-2 lg:py-4 group hover:text-main transition duration-300 ease-linear">
                                     <a :href="item.url" target="_blank">
                                         <span class="group-hover:text-green text-sm mr-2">●</span> {{item.en}}
                                     </a>
@@ -2196,7 +2200,8 @@
                 </div>
             </div>
             <div class="absolute lg:w-full lg:h-full left-8 lg:left-24 bottom-8 lg:bottom-auto lg:top-1/2 mx-auto">
-                <img class="w-11/12 md:w-3/5 lg:w-1/4 cursor-pointer" src="assets/visit-block-en.png" @click.prevent="toLink('https://www.nstm.gov.tw/')" />
+                <img class="w-11/12 md:w-3/5 lg:w-1/4 cursor-pointer" src="assets/visit-block-en.png"
+                    @click.prevent="toLink('https://www.nstm.gov.tw/')" />
             </div>
             <iframe class="pt-8 lg:pt-24"
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3682.3584735832114!2d120.32029106533157!3d22.640419436182707!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x346e04c2f0c9adf3%3A0x1a2756e5ee25f515!2z5ZyL56uL56eR5a245bel6Jed5Y2a54mp6aSo!5e0!3m2!1szh-TW!2stw!4v1646229133731!5m2!1szh-TW!2stw?z=1"
@@ -2204,17 +2209,21 @@
         </section>
 
         <footer class="bg-deepBlue flex flex-col items-center justify-center py-5">
-            <p class="text-white w-4/5 lg:w-full text-center mx-auto text-sm lg:text-lg">Organizer: Ministry Of Education</p>
-            <p class="text-white w-4/5 lg:w-full text-center mx-auto text-sm lg:text-lg">Co-organizer：National Kaohsiung University of Science and Technology</p>
-            <p class="text-white w-4/5 lg:w-full text-center mx-auto text-sm lg:text-lg">National Pingtung University of Science and Technology</p>
-            <p class="text-white w-4/5 lg:w-full text-center mx-auto text-sm lg:text-lg">National Science and Technology Museum</p>
+            <p class="text-white w-4/5 lg:w-full text-center mx-auto text-sm lg:text-lg">Organizer: Ministry Of
+                Education</p>
+            <p class="text-white w-4/5 lg:w-full text-center mx-auto text-sm lg:text-lg">Co-organizer：National Kaohsiung
+                University of Science and Technology</p>
+            <p class="text-white w-4/5 lg:w-full text-center mx-auto text-sm lg:text-lg">National Pingtung University of
+                Science and Technology</p>
+            <p class="text-white w-4/5 lg:w-full text-center mx-auto text-sm lg:text-lg">National Science and Technology
+                Museum</p>
 
             <p class="text-white w-4/5 lg:w-full text-center mx-auto text-sm lg:text-lg">2022 © National Science And
                 Technology Museum Designed By Pkthink</p>
         </footer>
     </div>
 
-   <!--  <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script> -->
+    <!--  <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script> -->
     <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
     <script src="./js/gsap.min.js"></script>
     <script src="./js/ScrollTrigger.min.js"></script>
@@ -2230,7 +2239,7 @@
                     'concepts': '展示理念',
                     'features': '展示特色'
                 },
-                introDescEn:{
+                introDescEn: {
                     'Exhibition Concepts': 'Starting from the idea of exploration, this exhibition successfully creates a display that boasts information and recreational effects while organizing a scavenger hunt for participants to learn about the advantages of occupational education, consider their future development, and explore unlimited possibilities that lie ahead.',
                     'Exhibition Features': 'Visitors will get a “hero card” when they start walking around the exhibition and going on the interactive scavenger hunt that is designed for seven discipline clusters. Participants who have won the scavenger hunt are eligible to choose various virtual reality workplace experiences and get a “workplace hero certificate” and a small gift upon completing these challenges.'
                 },
@@ -2290,8 +2299,8 @@
                         'color': '#0ba29a',
                         'desc': '由性向測驗產出「英雄卡」或以手機拍照QR碼，進行各學群的互動裝置闖關。',
                         'desc-en': 'Participants will get a “hero card” after completing an aptitude test or scanning the QR Code on their mobile phone before doing the interactive scavenger hunt designed for all discipline clusters.',
-                        'title':'A區 自我探索，走向未來-註冊區',
-                        'title-en':'Region A (Registration): Exploring your potential and moving toward the future',
+                        'title': 'A區 自我探索，走向未來-註冊區',
+                        'title-en': 'Region A (Registration): Exploring your potential and moving toward the future',
                         'sectionpics': ['a1.jpg', 'a2.jpg', 'a3.jpg', 'a4.jpg']
                     },
                     {
@@ -2299,8 +2308,8 @@
                         'color': '#49aacb',
                         'desc': '了解技職的優勢及特色，認識技職教育、行行出狀元的職人故事及知名企業家等。',
                         'desc-en': 'Students will understand the key benefits and features of occupational education by getting informed of what technical and vocational education is and a few more anecdotes about some occupational role models and renowned entrepreneurs.',
-                        'title':'B區 技職優勢',
-                        'title-en':'Region B (Advantages of Occupational Education)',
+                        'title': 'B區 技職優勢',
+                        'title-en': 'Region B (Advantages of Occupational Education)',
                         'sectionpics': ['b1.jpg', 'b2.jpg', 'b3.jpg', 'b4.jpg']
                     },
                     {
@@ -2308,8 +2317,8 @@
                         'color': '#b5b6b6',
                         'desc': '認識水產群、土木與建築群、電機與電子群、機械群、設計群、化工群與農業群的專業職科、研發，以及了解相對應的職業類型與未來，同時闖關體驗相關研發與知識為內容的互動裝置。',
                         'desc-en': 'Students will get an initial understanding of the professional knowledge and R&D advances of a whole range of discipline clusters:“aquatic science,” “mechanical engineering,” “electrical and electronics engineering,” “civil engineering and architecture,” “design science,” “chemical engineering,” and “agriculture.”  This helps them to form a clear picture of occupational choices and future prospects. They will learn a lot about related R&D results and knowledge through an interactive scavenger hunt, too.',
-                        'title':'C區 學群新體驗',
-                        'title-en':'Region C (Learning about different discipline clusters)',
+                        'title': 'C區 學群新體驗',
+                        'title-en': 'Region C (Learning about different discipline clusters)',
                     },
                     {
                         'section': 'D',
@@ -2317,7 +2326,7 @@
                         'desc': '確認完成闖關可以下載「英雄證書」。',
                         'desc-en': 'Participants can download the “workplace hero certificate” once their scavenger hunt has been completed.',
                         'sectionpics': ['d1.jpg', 'd2.jpg', 'd3.jpg', 'd4.jpg'],
-                        'title':'D區 職人認證區',
+                        'title': 'D區 職人認證區',
                         'title-en': 'Region D We are certified technicians and artisans!'
                     },
                     {
@@ -2326,8 +2335,8 @@
                         'desc': '成功闖關後，可以選擇不同職場VR體驗；體驗職人工作。',
                         'desc-en': 'Participants who have won the scavenger hunt are eligible to choose different VR scenarios to learn about different types of occupation.',
                         'sectionpics': ['e1.jpg', 'e2.jpg', 'e3.jpg', 'e4.jpg'],
-                        'title':'E區 VR職場體驗',
-                        'title-en':'Region E VR experience for technicians and artisans'
+                        'title': 'E區 VR職場體驗',
+                        'title-en': 'Region E VR experience for technicians and artisans'
                     },
                     {
                         'section': 'F',
@@ -2335,8 +2344,8 @@
                         'desc': '透過技職指南，認識各學群的研發成果及未來發展與科系。',
                         'desc-en': 'Students can use the guide for an occupational outlook to learn about the research and development results gleaned by different discipline clusters and gain an understanding of the colleges and departments and their future careers.',
                         'sectionpics': ['f1.jpg', 'f2.jpg', 'f3.jpg', 'f4.jpg'],
-                        'title':'F區 技職夢想列車',
-                        'title-en':'Region F  The dream train for occupational education'
+                        'title': 'F區 技職夢想列車',
+                        'title-en': 'Region F  The dream train for occupational education'
                     },
                     {
                         'section': 'G',
@@ -2344,8 +2353,8 @@
                         'desc': '定期辦理相關活動，包括分享職人故事講座或職人技能演示等。',
                         'desc-en': 'We conduct regular workshops and invite occupational professionals to share their experiences or demonstrate their expertise.',
                         'sectionpics': ['g1.jpg', 'g2.jpg'],
-                        'title':'G區 作中學體驗',
-                        'title-en':'Region G  Learning by doing'
+                        'title': 'G區 作中學體驗',
+                        'title-en': 'Region G  Learning by doing'
                     },
                     {
                         'section': 'Fish',
@@ -2353,8 +2362,8 @@
                         'desc': '臺灣四面環海使得水產養殖產業，與相關生技產業非常發達。水產群科除了基本的水產知識，更需與產業緊密連結，包括需了解市場研究、調查及行銷，甚至是財務、企業管理等知識，畢業後無論選擇研發或進入產業，才能遊刃有餘。',
                         'desc-en': 'Being surrounded by water on all four sides has allowed Taiwan’s aquaculture and related biotechnology industries to flourish. Aside from having basic knowledge of aquatic life, students in the field of aquatic science need to keep a close pulse on the industry itself. In addition to becoming acquainted with market research, studies, and marketing, students must also hone their business acumen in financial and enterprise management. Students that graduate from this field will then be well-versed in either academia or the industry.',
                         'sectionpics': ['c水1.jpg', 'c水2.jpg', 'c水3.jpg', 'c水4.jpg'],
-                        'title':'C1跨足生技，會養魚也要懂經營-水產群',
-                        'title-en':'C1 Stepping into Biotechnology: Understanding Business Management through Fish Farming- Aquatic Science Sector'
+                        'title': 'C1跨足生技，會養魚也要懂經營-水產群',
+                        'title-en': 'C1 Stepping into Biotechnology: Understanding Business Management through Fish Farming- Aquatic Science Sector'
                     },
                     {
                         'section': 'Mechan',
@@ -2362,8 +2371,8 @@
                         'desc': '在精密機械、微奈米機電，乃至醫學工程，都需要機械人才的情況下，過去被聯想為「黑手」的機械科系，變得越來越搶手，就業之路也越來越廣。臺灣機械自動化已有30年以上歷史，目前相關工作約有9成是利用電腦執行，不再靠苦力，另在機械製圖、精密機械方面，因女性具備細心、耐性的優勢，使得機械相關工作不再專屬男性。',
                         'desc-en': 'Precision, micro and nanometer machinery, and even biomedical engineering are all in need of mechanical engineers. Those in the profession were in the past associated with “black hands” but now more and more hands are needed in the industry. The career has since expanded as well. Mechanical automation has been around for three decades or so in Taiwan. It is estimated that about 90% of related jobs utilize computing instead of hard labor. When it comes to technical drawing and precision machinery, female mechanical engineers have the advantage given the meticulousness and patience that are required. No longer is the field a “men’s only” club.',
                         'sectionpics': ['c機2.jpg', 'c機1.jpg', 'c機3.jpg', 'c機4.jpg'],
-                        'title':'C2科技加持，技術出頭天-機械群',
-                        'title-en':'C2 The Power of Technologies, Tech Breakthroughs- Mechanical Engineering Sector'
+                        'title': 'C2科技加持，技術出頭天-機械群',
+                        'title-en': 'C2 The Power of Technologies, Tech Breakthroughs- Mechanical Engineering Sector'
                     },
                     {
                         'section': 'Electronic',
@@ -2371,8 +2380,8 @@
                         'desc': '科技產業每年為臺灣創造大量外匯存底，與該產業息息相關的基礎人才，主要來自於電機與電子群，不但培育具備電學觀念，以及電路裝配、分析、設計與應用的能力，且能執行系統開發、程式設計，判讀接線圖、電路圖，在日新月異的科技時代，讓畢業後出路無限寬廣。',
                         'desc-en': 'The technology sector rakes in large amounts of foreign exchange reserves for Taiwan every year. The most important talent pipeline connected to this sector is none other than the fields of electrical and electronics engineering. Those in this field must be well-versed in electrical engineering concepts and electric circuitry layouts, analytics, designs and applications. They must be able to execute system development, engage in programming, and read wiring and electrical circuit diagram. Nowadays, we are living in a rapid progressing modern world where is in want of talents from this field.',
                         'sectionpics': ['c電1.jpg', 'c電2.jpg', 'c電3.jpg', 'c電4.jpg'],
-                        'title':'C3科技尖兵，智慧生活先鋒-電機與電子群',
-                        'title-en':'C3 Technology Trailblazers, Smart Living Pioneers- Electrical and Electronics Engineering Sector'
+                        'title': 'C3科技尖兵，智慧生活先鋒-電機與電子群',
+                        'title-en': 'C3 Technology Trailblazers, Smart Living Pioneers- Electrical and Electronics Engineering Sector'
                     },
                     {
                         'section': 'Build',
@@ -2380,8 +2389,8 @@
                         'desc': '從居家住宅，到造橋鋪路、大型公共建設等，都需要建築設計、空間測繪及完工後消防工程等人才。又近年來環境保護已成為最關心問題之一，使工程技術解決環境污染問題的專業人才，越受重視，另在智慧住宅、智慧城市成為全球的趨勢下，急需年輕有創意的新血。',
                         'desc-en': 'Every residential building, bridge, major road, and large structure requires architects and surveying engineers as well as fire protection engineers after a project has finished. In recent years, environmental protection has become one of the core concerns for the government, corporations, and the general public. As a result, more attention has been given to professionals that specialize in using engineering skills to solve the issues of pollution and environmental damage. In light of the rising global trends in smart homes and smart cities, civil engineering and architectural science are in great need of new blood and young innovators.',
                         'sectionpics': ['c土1.jpg', 'c土2.jpg', 'c土3.jpg', 'c土4.jpg'],
-                        'title':'C4理性感性兼具，有想法也要有手法-土木與建築',
-                        'title-en':'C4 Logos and Pathos Both Needed Putting an Idea into Action- Civil Engineering and Architecture Sector'
+                        'title': 'C4理性感性兼具，有想法也要有手法-土木與建築',
+                        'title-en': 'C4 Logos and Pathos Both Needed Putting an Idea into Action- Civil Engineering and Architecture Sector'
                     },
                     {
                         'section': 'Chemical',
@@ -2389,8 +2398,8 @@
                         'desc': '化工與我們的生活，息息相關，從食品、化妝保養品、紡織，到半導體、太陽能產業，都需要化工人才。不只化學能力，物理、數學也是化工學群的基礎學科。',
                         'desc-en': 'Chemical engineering is closely interconnected with our everyday lives from food and beauty products to textiles, semiconductors, and the solar energy industry. Behind all of these are chemical engineers. The fundamentals of the chemical engineering sector comprise not only capability with chemistry but also physics and mathematics.',
                         'sectionpics': ['c化1.jpg', 'c化2.jpg', 'c化3.jpg', 'c化4.jpg'],
-                        'title':'C5神乎其技，高科技帶來新契機-化工群',
-                        'title-en':'C5 Brilliant Skill and Mastery, High-Tech Pivotal Points- Chemical Engineering Sector'
+                        'title': 'C5神乎其技，高科技帶來新契機-化工群',
+                        'title-en': 'C5 Brilliant Skill and Mastery, High-Tech Pivotal Points- Chemical Engineering Sector'
                     },
                     {
                         'section': 'Design',
@@ -2398,7 +2407,7 @@
                         'desc': '臺灣要從代工王國成為品牌大國，設計群科系人才可說是最關鍵！近年來文創產業興盛下，增加了許多新科系別。因多媒體軟體的普及，重視圖文表現的廣告設計科、結合網路的多媒體設計科，以及多媒體應用科等，日益被重視，「會不會畫畫」不再是進入設計群科系的必要條件。',
                         'desc-en': 'In Taiwan’s transition from being subcontracting-oriented to being a brand-oriented country, talent in the field of design science may very well hold the key! In recent years, the cultural and creative industry has been booming, resulting in the creation of many new science departments. With the ubiquity of multimedia software, graphics and text-heavy departments such as advertising design, internet-linked multimedia design, and applied multimedia design are gaining more visibility. “Having a knack for drawing” is no longer prerequisite for admission into these departments.',
                         'sectionpics': ['c設1.jpg', 'c設2.jpg', 'c設3.jpg', 'c設4.jpg'],
-                        'title':'C6創新高手，從無到有-設計群',
+                        'title': 'C6創新高手，從無到有-設計群',
                         'title-en': 'C6 Innovation Mastery – From Nothing to Something- Design Science Sector'
                     },
                     {
@@ -2407,7 +2416,7 @@
                         'desc': '臺灣豐富的自然資源，加上歷年來各界引進的農產與技術，逐漸發展出多樣的農業成果。運用科技及經營管理，使得臺灣農業品質更加精良，除了提供精緻的生活，也揚眉國際。',
                         'desc-en': 'Taiwan’s abundant natural resources combined with agricultural products and technologies introduced in recent years have resulted in a variety of agricultural achievements. The use of technologies and management has further improved the agricultural quality, offering refined life and international fame.',
                         'sectionpics': ['c農1.jpg', 'c農2.jpg', 'c農3.jpg', 'c農4.jpg'],
-                        'title':'C7農業精緻化，善用科技生產行銷-農業群',
+                        'title': 'C7農業精緻化，善用科技生產行銷-農業群',
                         'title-en': 'C7 Refining agriculture and utilization of technological production and marketing- Agriculture Sector'
                     }
                 ]
@@ -2490,8 +2499,8 @@
                                 showAnim.play();
                                 showLang.play();
                                 showLogo.play();
-                            } else { 
-                                showAnim.reverse(); 
+                            } else {
+                                showAnim.reverse();
                                 showLang.reverse();
                                 showLogo.reverse();
                             }
@@ -2584,7 +2593,7 @@
                     }
                 }
                 ,
-                toLink: function(link){
+                toLink: function (link) {
                     location.href = link;
                 }
             },
