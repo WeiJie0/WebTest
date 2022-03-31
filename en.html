@@ -101,24 +101,24 @@
                             <img src="assets/text-bg-en.png" class="w-full md:hidden" alt="" srcset="">
                         </div>
                         <div
-                            class="absolute top-0 xl:top-4 3xl:top-16 w-9/12 left-12 md:left-40 xl:left-52 2xl:left-60 3xl:left-80 md:w-3/5 3xl:w-1/2 py-4 md:p-3">
+                            class="absolute top-0 xl:top-4 2xl5:top-12 3xl:top-16 w-9/12 left-12 md:left-40 xl:left-52 2xl:left-60 3xl:left-80 md:w-3/5 3xl:w-1/2 py-4 md:p-3">
                             <ul class="flex">
                                 <li @click="introType = 'Exhibition Concepts'"
                                     :class="{'active': introType == 'Exhibition Concepts'}"
-                                    class="intro-item-en p-3 xl:py-0 text-yellow leading-4 text-sm text-center font-bold xl:text-xl cursor-pointer mr-3">
+                                    class="intro-item-en p-3 xl:py-0 3xl:py-0 text-yellow leading-4 text-sm text-center font-bold xl:text-xl 2xl5:text-2xl 3xl:text-xl cursor-pointer mr-3">
                                     Exhibition Concepts
                                 </li>
                                 <li @click="introType = 'Exhibition Features'"
                                     :class="{'active': introType == 'Exhibition Features'}"
-                                    class="intro-item-en p-3 xl:py-0 text-yellow leading-4 text-sm text-center font-bold xl:text-xl cursor-pointer">
+                                    class="intro-item-en p-3 xl:py-0 3xl:py-0 text-yellow leading-4 text-sm text-center font-bold xl:text-xl 2xl5:text-2xl 3xl:text-xl cursor-pointer">
                                     Exhibition Features</li>
                             </ul>
                             <div class="lg:px-4">
                                 <h3
-                                    class="text-white font-bold hidden md:block text-xl 3xl:text-3xl xl:my-2 3xl:my-3">
+                                    class="text-white font-bold hidden md:block text-xl 2xl:text-2xl 3xl:text-3xl xl:my-2 3xl:my-3">
                                     {{introType}}
                                 </h3>
-                                <p class="text-white font-bold text-sm md:text-base xl:text-sm 3xl:text-lg">
+                                <p class="text-white font-bold text-sm md:text-base xl:text-sm 2xl:text-base 3xl:text-lg">
                                     {{introDescEn[introType]}}
                                 </p>
                             </div>
